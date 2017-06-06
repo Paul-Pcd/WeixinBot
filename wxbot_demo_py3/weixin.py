@@ -801,7 +801,7 @@ class WebWeixin(object):
                     #ans = self._simsimi(content) + '\n[微信机器人自动回复]'
                     ans = str(self.webwxsendmsg(str(content),"小冰"))
                     if self.webwxsendmsg(ans, msg['FromUserName']):
-                        print('自动回复: ' + ans)
+                        print('自动回复: ' + ans+msg['FromUserName'])
                         logging.info('自动回复: ' + ans)
                     else:
                         print('自动回复失败')
