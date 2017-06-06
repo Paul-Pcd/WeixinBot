@@ -799,7 +799,7 @@ class WebWeixin(object):
 #自己加的代码-------------------------------------------#
                 if self.autoReplyMode:
                     #ans = self._simsimi(content) + '\n[微信机器人自动回复]'
-                    ans = str(self.webwxsendmsg(str(content),"小冰"))
+                    ans = str(self.webwxsendmsg(str(content),"@9916143384f45c39e45f05fe6212bcce"))
                     if self.webwxsendmsg(ans, msg['FromUserName']):
                         print('自动回复: ' + ans+msg['FromUserName'])
                         logging.info('自动回复: ' + ans)
